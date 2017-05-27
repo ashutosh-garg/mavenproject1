@@ -14,6 +14,6 @@ import static com.spring.model.ApiStatus.success;
 public class MainController {
     @RequestMapping(method = GET)
   public ResponseEntity<ApiResponse> greet(HttpServletRequest request) {
-    return new ResponseEntity<>(new ApiResponse(success, "welcome!"), OK);
+    return new ResponseEntity<>(new ApiResponse(success, "Welcome!"), OK);
   }
 }
